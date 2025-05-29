@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">Doctor Search and Filter Application</h1>
 
-## Getting Started
+## 📋 <a name="table">Table of Contents</a>
 
-First, run the development server:
+1. 💡 [Overview](#overview)
+2. 👩‍💻 [Tech Stack](#tech-stack)
+3. ✨ [Features](#features)
+4. 📦 [Getting Started](#getting-started)
+5. 📖 [Documentation](#documentation)
+6. 📫 [Contribute](#contribute)
+7. 🐛 [Issues](#issues)
+
+## <a name="overview">💡 Overview</a>
+
+The Doctor Search and Filter Application is a web based tool built using Next.js with TypeScript that allows users to search for and filter doctors based on various criteria including name, specialization, city, and area.
+
+## <a name="tech-stack">👩‍💻 Tech Stack</a>
+
+- Next.js
+- Axios
+
+## <a name="features">✨ Features</a>
+
+- Allows users to search doctors by name with live suggestions in a dropdown that includes hospital name and address.
+
+- Displays a list of doctor specializations via API and filters the doctor list based on the selected specialization.
+
+- Enables filtering of doctors by city and area, with dynamic area loading based on selected city.
+
+- Uses Axios to fetch data from APIs for doctors, specializations, cities, and areas in real-time.
+
+- Includes modular components like SearchBar, Filters, and DoctorList for clean and reusable code.
+
+- API responses are validated, errors are handled gracefully, and fallback UIs are shown when needed.
+
+- Organized service layer (api.ts) and use of useState and useEffect for managing API data and UI state.
+
+## <a name="getting-started">📦 Getting Started</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**clone the repository**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Rohitbiradar111/Doctor-Search-and-Filter-QuickOPD.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Install dependencies**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Start the server**
 
-## Learn More
+```bash
+  npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## <a name="documentation">📖 Documentation</a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[Next.js](https://nextjs.org/)
 
-## Deploy on Vercel
+[Axios](https://axios-http.com/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## <a name="contribute">📫 Contribute</a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are always welcome. Please follow these steps to contribute:
+
+1. **Fork the repository.**
+2. **Create a new branch** (`git checkout -b feature/your-feature-name`).
+3. **Make your changes** and commit them (`git commit -m 'Add some feature'`).
+4. **Push to the branch** (`git push origin feature/your-feature-name`).
+5. **Open a pull request**.
+
+Please make sure to update tests as appropriate.
+
+## <a name="issues">🐛 Issues</a>
+
+If you encounter any issues while using or setting up the project, please check the issues section to see if it has already been reported. If not, feel free to open a new issue detailing the problem.
+
+When reporting an issue, please include:
+
+- A clear and descriptive title.
+- A detailed description of the problem.
+- Steps to reproduce the issue.
+- Any relevant logs or screenshots.
+- The environment in which the issue occurs (OS, browser, Node.js version, etc.).
