@@ -18,6 +18,7 @@ The Doctor Search and Filter Application is a web based tool built using Next.js
 
 - Next.js
 - Axios
+- TypeScript
 
 ## <a name="features">✨ Features</a>
 
@@ -64,6 +65,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 [Next.js](https://nextjs.org/)
 
 [Axios](https://axios-http.com/)
+
+[TypeScript](https://www.typescriptlang.org/)
 
 ## <a name="contribute">📫 Contribute</a>
 
